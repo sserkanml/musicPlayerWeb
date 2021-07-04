@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="starbucks.css">
+     <title>Starbucks</title>
+ </head>
+
+ <body>
+     
+     <section>
+        <div class="circle"></div>
+         <header>    
+             <div id="imgBox"><img src="logo.png" alt="" id="logo"></div>
+             <div class="toggle" onclick='tikla();'>
+             </div>
+             <ul class="navigation">
+                 <li class=""><a href="#">Home</a></li>
+                 <li class=""><a href="#">Menu</a></li>
+                 <li class=""><a href="#">About</a></li>
+                 <li class=""><a href="#">Contact</a></li>
+                 <li class=""><a href="#">What's News</a></li>
+             </ul>
+         </header>
+         <div class="content">
+             <div class="text">
+                 <h2>It's not just a coffee<br>It's <span>Starbucks</span></h2>
+                 <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam facilis nemo nulla at
+                     similique, cum quis eveniet minima
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam facilis nemo nulla at
+                     similique, cum quis eveniet minima 
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam facilis nemo nulla at
+                     similique, cum quis eveniet minima
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam facilis nemo nulla at
+                     similique, cum quis eveniet minima 
+                 </p>
+                 <a href="#">Learn More</a>
+             </div>
+             <div class="imgBox2">
+                 <img src="cap.png.png" alt="" id="cap">
+             </div>
+         </div>
+         <ul class="thumb">
+           <li><img src="thumb1.png" alt="" onclick="changeCup('cap.png.png'); changeColor('#017143');"></li>
+           <li><img src="thumb2.png" alt="" onclick="changeCup('img2.png'); changeColor('#eb7495');"></li>  
+           <li><img src="thumb3.png" alt="" onclick="changeCup('img3.png'); changeColor('#d752b1');"></li>    
+         </ul>
+         <ul class="social-media">
+             <li><a href="https://facebook.com"><img src="facebook.png" alt=""></a></li>
+             <li><a href="https://twitter.com"><img src="twitter.png" alt=""></a></li>
+             <li><a href="https://instagram.com"><img src="instagram.png" alt=""></a></li>
+             
+         </ul>
+
+         <script type="text/javascript">
+          function changeCup(resim){
+              let findPicture=document.querySelector('#cap');
+              findPicture.src=resim;
+          };
+          function changeColor(color){
+              let circleColor=document.querySelector('.circle');
+              circleColor.style.background=color;
+              
+          };
+         </script>
+         <script>
+              function tikla(){
+             let menuToggle=document.querySelector(".toggle");
+             let navigationToggle=document.querySelector(".navigation")
+             menuToggle.classList.toggle('active');
+             navigationToggle.classList.toggle('active');
+               };
+
+         </script>
+
+
+     </section>
+
+
+ </body>
+
+ </html>
