@@ -33,7 +33,7 @@ body {
     box-shadow: 0 10px 6px var(--lightshadow);
     border-radius: 15px;
     padding: 10px;
-
+    overflow:hidden;
     position: relative;
 }
 
@@ -206,7 +206,7 @@ body {
 .music-list {
     position: absolute;
     bottom: -55%;
-    opacity: 0;
+    visibilty:hidden;
     left: 0;
     background: white;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.15);
@@ -219,7 +219,7 @@ body {
 }
 
 .music-list.show {
-    opacity: 1;
+    visibilty:visible;
     bottom: 0;
     pointer-events: auto;
 }
